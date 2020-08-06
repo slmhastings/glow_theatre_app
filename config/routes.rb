@@ -13,6 +13,10 @@ Rails.application.routes.draw do
     delete "users/id" => "users#destroy"
 
     get "/products" => "products#index"
+    post "/products" => "products#create"
+    get "/products/:id" => "products#show"
+
+   
 
   end
 end

@@ -1,6 +1,6 @@
-products.map do |product|
+@products.map do |product|
   {
-    name: product.name,
+    name: products.name,
     description: product.description,
     price: product.price,
     image_url: product.image_url,
