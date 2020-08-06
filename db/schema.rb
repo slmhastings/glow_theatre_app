@@ -10,10 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_05_224427) do
+ActiveRecord::Schema.define(version: 2020_08_06_000119) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "products", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.decimal "price"
+    t.string "image_url"
+    t.integer "booking_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"
@@ -24,10 +34,10 @@ ActiveRecord::Schema.define(version: 2020_08_05_224427) do
     t.string "city"
     t.string "state"
     t.integer "postal_code"
-    t.string "booking_id"
+    t.integer "booking_id"
     t.string "card_number"
     t.string "exp_date"
-    t.string "cvc"
+    t.integer "cvc"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
