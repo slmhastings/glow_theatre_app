@@ -1,1 +1,16 @@
-{message: "hi there"}
+@users.map do |user|
+  {
+    id: user.id,
+    first_name: user.first_name,
+    last_name: user.last_name, 
+    phone: user.phone,
+    address: user.address,
+    city: user.city,
+    state: user.state,
+    postal_code: user.postal_code,
+    booking_id: "booking.id",
+    card_number: user.card_number,
+    exp_date: user.exp_date,
+    cvc: user.cvc
+  }
+end
