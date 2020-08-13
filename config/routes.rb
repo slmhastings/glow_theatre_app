@@ -10,13 +10,19 @@ Rails.application.routes.draw do
     post "/users" => "users#create"
     get "users/:id" => "users#show"
     patch "users/:id" => "users#update"
-    delete "users/id" => "users#destroy"
+    delete "users/:id" => "users#destroy"
 
     get "/products" => "products#index"
     post "/products" => "products#create"
     get "/products/:id" => "products#show"
 
-    get "/carts" => "carts#index"
+    post "/carts" => "carts#create"
+
+    get "/bookings" => "bookings#index"
+    post "/bookings" => "bookings#create"
+    get "/bookings/:id" => "bookings#show"
+
+    post "sessions" =>  "sessions#create"
 
   end
 end

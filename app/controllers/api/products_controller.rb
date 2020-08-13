@@ -11,7 +11,7 @@ class Api::ProductsController < ApplicationController
       description: params[:description],
       price: params[:price],
     )
-    render "index.json.jb"
+    render "show.json.jb"
   end
 
   def show

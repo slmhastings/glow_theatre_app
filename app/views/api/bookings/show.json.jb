@@ -1,0 +1,7 @@
+{
+  date: @booking.date,
+  user_id: @booking.user_id,
+  subtotal: @booking.subtotal,
+  tax: @booking.tax,
+  total: @booking.total
+}

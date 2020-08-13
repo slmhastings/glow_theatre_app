@@ -1,0 +1,7 @@
+{
+  product_id: @cart.product_id,
+  quantity: @cart.quantity,
+  user_id: @cart.user_id,
+  booking_id: @cart.booking_id,
+  status: @cart.status
+}
