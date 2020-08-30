@@ -17,12 +17,15 @@ Rails.application.routes.draw do
     get "/products/:id" => "products#show"
 
     post "/carts" => "carts#create"
+    get "/carts/:id" => "carts#show"
 
     get "/bookings" => "bookings#index"
     post "/bookings" => "bookings#create"
     get "/bookings/:id" => "bookings#show"
 
     post "sessions" =>  "sessions#create"
+
+    get "movies" => "movies#index"
 
   end
 end

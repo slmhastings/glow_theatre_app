@@ -11,5 +11,10 @@ class Api::CartsController < ApplicationController
     render "show.json.jb"
   end    
 
+  def show 
+    @cart = Cart.find_by(id: params[:id])
+    render "show.json.jb"
+  end
+
   
 end
