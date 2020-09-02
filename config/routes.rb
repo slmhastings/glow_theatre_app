@@ -8,9 +8,9 @@ Rails.application.routes.draw do
     # Users
     get "/users" => "users#index"
     post "/users" => "users#create"
-    get "users/:id" => "users#show"
-    patch "users/:id" => "users#update"
-    delete "users/:id" => "users#destroy"
+    get "/users/:id" => "users#show"
+    patch "/users/:id" => "users#update"
+    delete "/users/:id" => "users#destroy"
 
     get "/products" => "products#index"
     post "/products" => "products#create"
@@ -23,9 +23,9 @@ Rails.application.routes.draw do
     post "/bookings" => "bookings#create"
     get "/bookings/:id" => "bookings#show"
 
-    post "sessions" =>  "sessions#create"
+    post "/sessions" =>  "sessions#create"
 
-    get "movies" => "movies#index"
+    get "/movies" => "movies#index"
 
   end
 end
