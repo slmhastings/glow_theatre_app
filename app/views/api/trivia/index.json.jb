@@ -1,4 +1,6 @@
 {
   question: @trivia["question"],
+  correct_answer: @trivia["correct_answer"],
+  
 
 }
